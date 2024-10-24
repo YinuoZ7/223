@@ -180,3 +180,41 @@ I add this code to try if this work.
 # this is all I want to have in this project.
 
 ## I want to try change a slow music so I creative a new folder for a slow music use the same code.
+- so that is how I get another one with another music with same shape.
+
+# I want to try to change the shape to trangle, that is hard
+- I need to set the size of the trangle, then I need to change a lot of things on that, but I didn't save after change the code, I miss the step with this, but all in all, I use chatgpt help me to fix the code, cause when I write that out, I try to run, but have lots of errors, I have no idea how to fix that, so I ask chatgpt.
+- i got that the code is wrong is because 
+- 1. the define of amount
+- 2. the loop and the size of the trangle
+
+## I want to change another color for these two.
+
+# for the circle I change that to the rainbow
+
+```
+void ofApp::draw(){
+
+    for (int y = 0; y < ofGetHeight(); y++){
+        
+        float hue = ofMap(y, 0, ofGetHeight(), 0, 255); 
+        ofColor color = ofColor::fromHsb(hue, 255, 255); 
+        ofSetColor(color);
+        ofDrawRectangle(0, y, ofGetWidth(), 1); 
+    }
+
+    
+    for (int i = 0; i < AMOUNT; i++){
+        float x = ofRandom(ofGetWidth());
+        float y = ofRandom(ofGetHeight());
+        float radius = fft[i] * 100;
+
+        ofSetColor(ofRandom(255), ofRandom(255), ofRandom(255)); 
+        ofDrawCircle(x, y, radius);
+    }
+
+    gui.draw();
+}
+```
+- this is the final code for the background
+
