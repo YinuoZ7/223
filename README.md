@@ -1,1 +1,1 @@
-# this is the midterm project
+# the 233 class
