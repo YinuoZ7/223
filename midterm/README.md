@@ -216,5 +216,5 @@ void ofApp::draw(){
     gui.draw();
 }
 ```
-- this is the final code for the background
+- this is the final code for the background, but I feel like that is so ungly, so I change to the yellow one
 
