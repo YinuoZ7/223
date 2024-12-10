@@ -15,5 +15,5 @@
 ## there is a question is that the sound is no more like dark music is like a helicopters, so at first I try to change a sound in logic
 - right now I am using a synthesizers in kontakt, so what am I going to do is change to another sound for this. after trying so many times, I use the one that I have right now, which is in analog dream called Mona Liza,
 
-# to make the shape with the music
+# to make the shape
 1. 

@@ -1,4 +1,4 @@
-#N canvas -3 103 935 847 12;
+#N canvas 0 361 1429 894 12;
 #X obj 726 123 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 725 161 metro 200;
 #X text 42 21 MEDIA>MIDI>IACDRIVERS as input and output command-E to edit patch toggle on! connect!;
