@@ -1,6 +1,6 @@
-#N canvas 489 38 1143 919 12;
+#N canvas 414 48 1348 926 12;
 #X declare -lib Gem;
-#X obj 726 123 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 730 111 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 725 161 metro 200;
 #X text 42 21 MEDIA>MIDI>IACDRIVERS as input and output command-E to edit patch toggle on! connect!;
 #X obj 723 189 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -59,7 +59,7 @@
 #X obj 930 356 part_velocity sphere 0 0.2 0 0.3;
 #X obj 930 389 part_source 20;
 #X obj 930 420 part_killold 50;
-#N canvas 948 362 339 242 Gem.init 0;
+#N canvas 694 375 339 242 Gem.init 0;
 #X obj 118 46 loadbang;
 #X msg 118 81 reset;
 #X obj 118 113 outlet;
@@ -106,6 +106,16 @@
 #X coords 0 -1 1 1 85 40 1 100 100;
 #X restore 894 186 pd gemwin;
 #X obj 1229 128 declare -lib Gem;
+#X obj 50 50 gemwin;
+#X msg 50 70 create;
+#X msg 50 90 destroy;
+#X obj 150 50 gemhead;
+#X obj 150 90 translateXYZ 0 0 0;
+#X obj 150 130 rotateXYZ;
+#X obj 150 170 circle 1;
+#X obj 296 75 t b f;
+#X obj 313 121 + 1;
+#X obj 240 167 % 360;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 3 0 31 0;
